@@ -14,24 +14,18 @@ marianne.sabourin-felix.1@ulaval.ca
 7. OUTPUT FILES
 8. HOW IT WORKS
 
-#==============
 # INTRODUCTION
-#==============
 
 This script process raw ChIP-seq data into aligned BAM files.
 
-#==========
 # WARNINGS
-#==========
 
 Caution, this script was tested only on Linux 14.04 LTS distribution and is
 provided "as is", without warranty.
 
 This script works only with SINGLE END files.
 
-#=======================
 # SOFTWARE DEPENDENCIES
-#=======================
 
 This script requires the following softwares :
 
@@ -44,9 +38,7 @@ This script requires the following softwares :
  
  * Note that these packages are already installed on Zurich server.
 
-#====================
 # FILES REQUIREMENTS
-#====================
 
 The input file format can be either in FASTQ, SAM, BAM, SRA or FASTQ.GZ. One can
 process as many file as wanted but one must consider the storage space on the
@@ -59,9 +51,7 @@ bowtie2-buil -f genomeChr1.fa,genomeChr2.fa,genomeChr3.fa genomeName
 
   where genomeChr1.fa,...,genomeChr3.fa is the list of genome files.
 
-#===============
 # HOW TO USE IT
-#===============
 
 [1]  One must change the access permission of the script as follows :
 
@@ -133,17 +123,13 @@ bowtie2-buil -f genomeChr1.fa,genomeChr2.fa,genomeChr3.fa genomeName
 
 [13] Choose yes or no to remove or not intermediate files.
 
-#===============
 # PRECONDITIONS
-#===============
 
 - The input files must exist and be in FASTQ, SAM, BAM, SRA or FASTQ.GZ format.
 - The reference genome file must be indexed.
 - The device must have enough space to stock four times the size of each file.
 
-#==============
 # OUTPUT FILES
-#==============
 
 There will be a folder named yearMonthDay_hourMinSec. If the user choose to keep
 intermediate files, this folder will contain four folder named fastFile,
@@ -161,9 +147,7 @@ sortedFiles -> filename_sorted.bam
 
 Where filename.fastqc.zip is the FastQC quality analysis.
 
-#==============
 # HOW IT WORKS
-#==============
 
 This script will detect the input file format (FASTQ, BAM, SRA or FASTQ.GZ)
 and will convert it into FASTQ.GZ format in the fastqFile directory (with SRA
