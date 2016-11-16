@@ -35,8 +35,6 @@ This script requires the following softwares :
  - Trimmomatic-0.33
  - Bowtie2
  - Samtools
- 
- * Note that these packages are already installed on Zurich server.
 
 # FILES REQUIREMENTS
 
