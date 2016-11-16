@@ -766,8 +766,8 @@ do
     then
         phred="phred33"
     else
-        echo " $red[ERROR102]$normal : Phred encoding format not supported yet, please report to marianne.sabourin-felix.1@ulaval.ca"
-        echo " [ERROR102] : Phred encoding format not supported yet, please report to marianne.sabourin-felix.1@ulaval.ca" >> $log
+        echo " $red[ERROR103]$normal : Phred encoding format not supported yet, please report to marianne.sabourin-felix.1@ulaval.ca"
+        echo " [ERROR103] : Phred encoding format not supported yet, please report to marianne.sabourin-felix.1@ulaval.ca" >> $log
         exit
     fi
     
