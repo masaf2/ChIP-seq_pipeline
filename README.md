@@ -137,11 +137,14 @@ folder yearMonthDay_hourMinSec.
 
 Each folder will contain these types of files :
 
- fastqFiles  -> filename.fastq.gz
-                filename.fastqc.zip
- trimFiles   -> filename_trim.fastq.gz
- alignFiles  -> filename_aln.bam
- sortedFiles -> filename_sorted.bam
+fastqFiles  -> filename.fastq.gz
+               filename.fastqc.zip
+
+trimFiles   -> filename_trim.fastq.gz
+
+alignFiles  -> filename_aln.bam
+
+sortedFiles -> filename_sorted.bam
 
 Where filename.fastqc.zip is the FastQC quality analysis.
 
