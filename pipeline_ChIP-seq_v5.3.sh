@@ -1,12 +1,8 @@
 #!/bin/bash
 # author: Marianne S. Felix
 # marianne.sabourin-felix.1@ulaval.ca
-# Version : 5.2
+# Version : 5.3
 # 2015-06-12
-# 2015-09-04
-# 2016-02-24
-# 2016-02-29
-# 2016-03-02
 #
 # pipeline_ChIP-seq_v5.1.sh
 
