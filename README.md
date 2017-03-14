@@ -104,8 +104,7 @@ bowtie2-buil -f genomeChr1.fa,genomeChr2.fa,genomeChr3.fa genomeName
       For a better coverage, one can choose 3 alignments per read. Otherwise, 1
       is recommended.
 
-[10] Close the screen to let the analysis run (it takes approximately 3 hours by
-     file) :
+[10] Close the screen to let the analysis run :
      
       Ctrl + a, Ctrl + d
      
