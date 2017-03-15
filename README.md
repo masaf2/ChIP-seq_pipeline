@@ -96,14 +96,12 @@ bowtie2-buil -f genomeChr1.fa,genomeChr2.fa,genomeChr3.fa genomeName
 [8]  Type the number of thread(s) you want to use (for trimmomatic and Bowtie2),
      followed by [ENTER].
 
-      If the analysis are made on a personal computer, 1 thread is recommended to
-      ensure the smooth running of other applications.
+> If the analysis are made on a personal computer, 1 thread is recommended to ensure the smooth running of other applications.
 
 [9]  Type the number of aln per read you want to allow (for Bowtie2), followed by
      [ENTER].
 
-      For a better coverage, one can choose 3 alignments per read. Otherwise, 1
-      is recommended.
+> For a better coverage, one can choose 3 alignments per read. Otherwise, 1 is recommended.
 
 [10] Close the screen to let the analysis run :
      
