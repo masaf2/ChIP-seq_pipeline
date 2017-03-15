@@ -3,7 +3,7 @@
 
 Marianne S. Felix
 
-marianne.sabourin-felix.1@ulaval.ca
+marianne.sabourin-felix@hotmail.com
 ---------------------------------------
 
 1. INTRODUCTION
