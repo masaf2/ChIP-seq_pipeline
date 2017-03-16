@@ -66,11 +66,13 @@ where genomeChr1.fa,...,genomeChr3.fa is the list of genome files.
 
  Here is the list of the most used command of the screen :
  
-   Create a screen : screen -S screenName
-   Close           : Ctrl + a, Ctrl + d
-   List            : screen -ls
-   Resume          : screen -r screenName
-   Delete          : screen -S screenName -X quit
+ ```
+Create a screen : screen -S screenName
+Close           : Ctrl + a, Ctrl + d
+List            : screen -ls
+Resume          : screen -r screenName
+Delete          : screen -S screenName -X quit
+```
 
 [3]  Run the script into the open screen :
 
