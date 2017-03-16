@@ -44,11 +44,15 @@ process as many file as wanted but one must consider the storage space on the
 device (foresee four times the space of the file). Then, the reference genome
 must be indexed. To do so, run the following command :
 
+```
 bowtie2-build -f genomeFile.fa genomeName
-  or
+```
+or
+```
 bowtie2-buil -f genomeChr1.fa,genomeChr2.fa,genomeChr3.fa genomeName
+```
 
-  where genomeChr1.fa,...,genomeChr3.fa is the list of genome files.
+where genomeChr1.fa,...,genomeChr3.fa is the list of genome files.
 
 ## HOW TO USE IT
 
@@ -78,9 +82,7 @@ bowtie2-buil -f genomeChr1.fa,genomeChr2.fa,genomeChr3.fa genomeName
        2 . Launch pipeline
        3 . Quit
 
-      The first option display this manual. The second option launch the pipeline
-      and the third option close the program. For the rest of this section, we
-      assume that the option two is chosen.
+>The first option display this manual. The second option launch the pipeline and the third option close the program. For the rest of this section, we assume that the option two is chosen.
 
 [5]  Enter either F if you want to process one file or D for a folder if you
      want to process many files followed by [ENTER].
