@@ -39,10 +39,8 @@ This script requires the following softwares :
 
 ## FILES REQUIREMENTS
 
-The input file format can be either in FASTQ, SAM, BAM, SRA or FASTQ.GZ. One can
-process as many file as wanted but one must consider the storage space on the
-device (foresee four times the space of the file). Then, the reference genome
-must be indexed. To do so, run the following command :
+The input file format can be either in FASTQ, SAM, BAM, SRA or FASTQ.GZ.
+The reference genome must be indexed. To do so, run the following command :
 
 ```
 bowtie2-build -f genomeFile.fa genomeName
