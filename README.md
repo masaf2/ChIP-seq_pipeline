@@ -80,9 +80,23 @@ Delete          : screen -S screenName -X quit
 
 [4]  Choose an option between the three :
 
-       1 . Help/Manual
-       2 . Launch pipeline
-       3 . Quit
+```
+*******************************************
+*                                         *
+*   ChIP-seq pipeline version 5.3         *
+*   -----------------------------------   *
+*   by Marianne S. Felix                  *
+*                                         *
+*   Please report any bug to :            *
+*   marianne.sabourin-felix.1@ulaval.ca   *
+*                                         *
+*******************************************
+
+ Main menu - Choose an option :
+  1 . Help/Manual
+  2 . Launch pipeline
+  3 . Quit
+```
 
 >The first option display this manual. The second option launch the pipeline and the third option close the program. For the rest of this section, we assume that the option two is chosen.
 
