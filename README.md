@@ -115,7 +115,7 @@ Delete          : screen -S screenName -X quit
 
       screen -r screenName
 
-[12] If the job is completed, this message will appear :
+[12] When the job is completed, this message will appear :
 
       Experiment ExperimentName processed in X hours X minutes and X seconds !
       This experiment used X additional disk space on your device.
