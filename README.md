@@ -131,35 +131,25 @@ Delete          : screen -S screenName -X quit
 
 ## OUTPUT FILES
 
-There will be a folder named yearMonthDay_hourMinSec. If the user choose to keep
-intermediate files, this folder will contain four folder named fastFile,
-trimFiles, alignFiles and sortedFiles. This last will contain the final files.
-If the user choose to remove intermediate files, the final files will be in the
-folder yearMonthDay_hourMinSec.
+There will be a folder named yearMonthDay_hourMinSec. 
 
 Each folder will contain these types of files :
 
-    fastqFiles  -> filename.fastq.gz
-                   filename.fastqc.zip
+    FinalFiles/k1/file_sorted-k1.bam
+              /k1/file_sorted-k1.bam.bai
+              /k3/file_sorted-k3.bam
+              /k3/file_sorted-k3.bam.bai
 
-    trimFiles   -> filename_trim.fastq.gz
+    QualityCheck/file_fastqc/
+                /file_trim_fastqc/
 
-    alignFiles  -> filename_aln.bam
+    settingSummary-yearMonthDay_hourMinSec.txt
 
-    sortedFiles -> filename_sorted.bam
+    yearMonthDay_hourMinSec.log
 
-Where filename.fastqc.zip is the FastQC quality analysis.
+Where file_sorted-k\*.bam is the final file, file_fastqc is the FastQC quality analysis, settingSummary-yearMonthDay_hourMinSec.txt is the summary of the command and yearMonthDay_hourMinSec.log is the log of the processing.
 
 ## HOW IT WORKS
 
-This script will detect the input file format (FASTQ, BAM, SRA or FASTQ.GZ)
-and will convert it into FASTQ.GZ format in the fastqFile directory (with SRA
-Toolkit or Bedtools). Then, a FastQC quality analysis will be performed on these
-files (with FastQC) and be stored in the same folder. From these analysis, the
-encoding format and the overrepresented sequence (adapter) will be extracted. A
-trimming will be done (with Trimmomatic) and the clean FASTQ.GZ files will be
-stored in the trimFiles directory. Then, the alignment of these files is made
-(with Bowtie2) and the output is stored in the alignFiles folder. These file are
-then sorted (with Samtools). The user decides to keep or to delete intermediate
-files at the end of the script execution.
+This script writes the summary of the command in a file and store the processing information in a log file. It detects the input file format (FASTQ, BAM, SRA or FASTQ.GZ) and will convert it into FASTQ.GZ format in the fastqFile directory (with SRA Toolkit or Bedtools). Then, a FastQC quality analysis will be performed on these files (with FastQC). From these analysis, the encoding format and the overrepresented sequence (adapter) will be detected. A trimming will be done (with Trimmomatic) according to these parameters and the user's parameters. Then, the alignment of these files is made (with Bowtie2). These file are then sorted (with Samtools). The final files will be stored in the FinalFiles directory.
 
