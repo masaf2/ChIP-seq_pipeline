@@ -147,7 +147,7 @@ Each folder will contain these types of files :
 
     yearMonthDay_hourMinSec.log
 
-Where file_sorted-k\*.bam is the final file, file_fastqc is the FastQC quality analysis, settingSummary-yearMonthDay_hourMinSec.txt is the summary of the command and yearMonthDay_hourMinSec.log is the log of the processing.
+Where file_sorted-k/*.bam is the final file, file_fastqc is the FastQC quality analysis, settingSummary-yearMonthDay_hourMinSec.txt is the summary of the command and yearMonthDay_hourMinSec.log is the log of the processing.
 
 ## HOW IT WORKS
 
