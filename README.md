@@ -39,7 +39,7 @@ This script requires the following softwares :
 
 ## FILES REQUIREMENTS
 
-The input file format can be either in FASTQ, SAM, BAM, SRA or FASTQ.GZ.
+The input file format can be either in FASTQ, BAM, SRA or FASTQ.GZ.
 The reference genome must be indexed. To do so, run the following command :
 
 ```
