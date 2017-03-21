@@ -119,9 +119,10 @@ Delete          : screen -S screenName -X quit
 
 [14.3]  Type the minimum score for simple match you want to allow for trimmomatic ILLUMINACLIP option (Defaut=10), followed by [ENTER].
 
-[15]  Type the number of alignment with different k value (aln per read) you want to do, followed by [ENTER] : 2
+[15]  Type the number of alignment with different k value (aln per read) you want to do, followed by [ENTER] :
 
-[16]  Enter your k value (aln per read) #1, followed by [ENTER] : 1
+[16]  Enter your k value (aln per read) #X, followed by [ENTER] :
+      ...
 
 > For a better coverage, one can choose 3 alignments per read. Otherwise, 1 is recommended.
 
