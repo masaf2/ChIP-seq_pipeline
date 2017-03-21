@@ -97,37 +97,53 @@ Delete          : screen -S screenName -X quit
 
       e.g.: for Mm10.1.bt2 etc. enter : /path/to/index/Mm10
 
-[8]  Type the number of thread(s) you want to use (for trimmomatic and Bowtie2),
-     followed by [ENTER].
+[8]  Type the number of thread(s) you want to use (for trimmomatic and Bowtie2), followed by [ENTER].
 
 > If the analysis are made on a personal computer, 1 thread is recommended to ensure the smooth running of other applications.
 
-[9]  Type the number of aln per read you want to allow (for Bowtie2), followed by
-     [ENTER].
+[9]  Type the minimum score you want to use for trimmomatic LEADING option, followed by [ENTER].
+
+[10]  Type the minimum score you want to use for trimmomatic TRAILING option, followed by [ENTER].
+
+[11]  Type the minimum length you want to use for trimmomatic MINLEN option, followed by [ENTER].
+
+[12]  Do you want to remove adapters from dataset ? [yes|no]
+
+[13]  Type the path to the adapter file ex: /home/App/Trimmomatic-0.33/adapters/TruSeq3-SE.fa, followed by [ENTER].
+
+[14]  Do you want to change the ILLUMINACLIP settings ? (Default : ILLUMINACLIP:adapterFile:2:30:10) [yes|no]
+
+[14.1]  Type the maximal seed mismatch you want to allow for trimmomatic ILLUMINACLIP option (Default=2), followed by [ENTER].
+
+[14.2]  Type the minimum score for palindrome match you want to allow for trimmomatic ILLUMINACLIP option (Defaut=30), followed by [ENTER].
+
+[14.3]  Type the minimum score for simple match you want to allow for trimmomatic ILLUMINACLIP option (Defaut=10), followed by [ENTER].
+
+[15]  Type the number of alignment with different k value (aln per read) you want to do, followed by [ENTER] : 2
+
+[16]  Enter your k value (aln per read) #1, followed by [ENTER] : 1
 
 > For a better coverage, one can choose 3 alignments per read. Otherwise, 1 is recommended.
 
-[10] Close the screen to let the analysis run :
+[17] Close the screen to let the analysis run :
      
       Ctrl + a, Ctrl + d
      
-[11] Resume your screen to see if the job is completed :
+[18] Resume your screen to see if the job is completed :
 
       screen -r screenName
 
-[12] When the job is completed, this message will appear :
+[19] When the job is completed, this message will appear :
 
-      Experiment ExperimentName processed in X hours X minutes and X seconds !
-      This experiment used X additional disk space on your device.
-      Do you want to remove intermediate files ? [yes|no]
-
-[13] Choose yes or no to remove or not intermediate files.
+      Experiment ExperimentName used X of additional disk space on your device
+      and was processed in X hours X minutes and X seconds !
+      ------------------------------------------------------------------------
+      Final files are in folder ExperimentName/FinalFiles ! :)
 
 ## PRECONDITIONS
 
-- The input files must exist and be in FASTQ, SAM, BAM, SRA or FASTQ.GZ format.
+- The input files must exist and be in FASTQ, BAM, SRA or FASTQ.GZ format.
 - The reference genome file must be indexed.
-- The device must have enough space to stock four times the size of each file.
 
 ## OUTPUT FILES
 
