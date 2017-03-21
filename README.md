@@ -122,7 +122,6 @@ Delete          : screen -S screenName -X quit
 [15]  Type the number of alignment with different k value (aln per read) you want to do, followed by [ENTER] :
 
 [16]  Enter your k value (aln per read) #X, followed by [ENTER] :
-      ...
 
 > For a better coverage, one can choose 3 alignments per read. Otherwise, 1 is recommended.
 
