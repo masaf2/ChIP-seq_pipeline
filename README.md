@@ -109,31 +109,31 @@ Delete          : screen -S screenName -X quit
 
 [12]  Do you want to remove adapters from dataset ? [yes|no]
 
-[13]  Type the path to the adapter file ex: /home/App/Trimmomatic-0.33/adapters/TruSeq3-SE.fa, followed by [ENTER].
+[12.1]  Type the path to the adapter file ex: /home/App/Trimmomatic-0.33/adapters/TruSeq3-SE.fa, followed by [ENTER].
 
-[14]  Do you want to change the ILLUMINACLIP settings ? (Default : ILLUMINACLIP:adapterFile:2:30:10) [yes|no]
+[12.2]  Do you want to change the ILLUMINACLIP settings ? (Default : ILLUMINACLIP:adapterFile:2:30:10) [yes|no]
 
-[14.1]  Type the maximal seed mismatch you want to allow for trimmomatic ILLUMINACLIP option (Default=2), followed by [ENTER].
+[12.2.1]  Type the maximal seed mismatch you want to allow for trimmomatic ILLUMINACLIP option (Default=2), followed by [ENTER].
 
-[14.2]  Type the minimum score for palindrome match you want to allow for trimmomatic ILLUMINACLIP option (Defaut=30), followed by [ENTER].
+[12.2.2]  Type the minimum score for palindrome match you want to allow for trimmomatic ILLUMINACLIP option (Defaut=30), followed by [ENTER].
 
-[14.3]  Type the minimum score for simple match you want to allow for trimmomatic ILLUMINACLIP option (Defaut=10), followed by [ENTER].
+[12.2.3]  Type the minimum score for simple match you want to allow for trimmomatic ILLUMINACLIP option (Defaut=10), followed by [ENTER].
 
-[15]  Type the number of alignment with different k value (aln per read) you want to do, followed by [ENTER] :
+[13]  Type the number of alignment with different k value (aln per read) you want to do, followed by [ENTER] :
 
-[16]  Enter your k value (aln per read) #X, followed by [ENTER] :
+[14]  Enter your k value (aln per read) #X, followed by [ENTER] :
 
 > For a better coverage, one can choose 3 alignments per read. Otherwise, 1 is recommended.
 
-[17] Close the screen to let the analysis run :
+[15] Close the screen to let the analysis run :
      
       Ctrl + a, Ctrl + d
      
-[18] Resume your screen to see if the job is completed :
+[16] Resume your screen to see if the job is completed :
 
       screen -r screenName
 
-[19] When the job is completed, this message will appear :
+[17] When the job is completed, this message will appear :
 
       Experiment ExperimentName used X of additional disk space on your device
       and was processed in X hours X minutes and X seconds !
