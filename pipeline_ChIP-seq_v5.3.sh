@@ -698,7 +698,6 @@ do
         gz)
             # Corresponding to fastq.gz format (validated earlier)
             # File already in the right format
-            continue
             ;;
             
         fastq|fq)
